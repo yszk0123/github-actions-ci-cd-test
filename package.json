@@ -1,0 +1,12 @@
+{
+  "private": true
+  "name": "github-actions-ci-cd-test",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/yszk0123/github-actions-ci-cd-test.git",
+  "author": "Yuji Suzuki <y0suzuki0123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
