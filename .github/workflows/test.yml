@@ -1,0 +1,15 @@
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        version: 12
+    - name: run test
+      run: |
+        npm install
+        npm run build --if-present
+        npm test
